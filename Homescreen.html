@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Website Menghitung Pecahan Uang</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="hitungPecahan.js"></script>
+  <style>
+  </style>
+</head>
+
+<body>
+<div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="col-sm-6">
+      <form>
+      		<div class="form-group">
+                <label for="jumlahUang" style= "padding-right : 5%" >Masukkan jumlah uang</label>
+  			    <input type="text" class="form-control" id="jumlahUang">
+			    </div>
+
+            <div class="form-group">
+                <label for="pecahanSeratus" style= "padding-right : 5%" >Masukkan jumlah pecahan 100 rb (lembar)</label>
+                  <input type="text" class="form-control" id="pecahanSeratus">
+            </div>
+            
+            <div class="form-group">
+                <label for="pecahanLimapuluh" style= "padding-right : 5%" >Masukkan jumlah pecahan 50 rb (lembar)</label>
+                  <input type="text" class="form-control" id="pecahanLimapuluh">
+            </div>
+        
+            <div class="form-group">
+                <label for="pecahanDuapuluh" style= "padding-right : 5%" >Masukkan jumlah pecahan 20 rb (lembar)</label>
+                  <input type="text" class="form-control" id="pecahanDuapuluh">
+            </div>     
+
+              <button type="button" class="btn btn-primary" onClick="hitungPecahan();">Hitung</button>
+	  </form>
+    </div>
+    <div class="col-sm-6">
+      <h5 class="text-center">Hasil pecahan </h5>
+      <form>
+        <div class="input-group" >
+          <input type="text" class="form-control" id="jumlahSeratusan" placeholder="Total pecahan 100 rb">
+          <label for="jumlahSeratusan" style= "padding-left : 5%" >Pecahan 100 rb</label>
+        </div>
+
+        <div class="input-group">
+            <input type="text" class="form-control" id="jumlahLimapuluh" placeholder="Total pecahan 50 rb">
+            <label for="jumlahLimapuluh" style= "padding-left : 5%" >Pecahan 50 rb</label>
+          </div>
+
+          <div class="input-group">
+            <input type="text" class="form-control" id="jumlahDuapuluh" placeholder="Total pecahan 20 rb">
+            <label for="jumlahDuapuluh" style= "padding-left : 5%" >Pecahan 20 rb</label>
+          </div>
+
+          <div class="input-group">
+            <label for="sisaUang" style= "padding-right : 5%" >Sisa</label>
+            <input type="text"  class="form-control" id="sisaUang" placeholder="Jumlah uang yang tersisa">
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+
+</body>
+</html>
